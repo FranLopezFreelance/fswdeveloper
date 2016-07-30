@@ -4,15 +4,19 @@
 	<meta charset="UTF-8">
 	<title>FSWDeveloper</title>
 
-	<!-- bootstrap core css -->
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.3/css/bootstrap.min.css" integrity="sha384-MIwDKRSSImVFAZCVLtU0LMDdON6KVCrZHyVQQj6e8wIEJkW4tvwqXrbMIya1vriY" crossorigin="anonymous">
+	<!-- Latest compiled and minified CSS -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
 
 	<link rel="stylesheet" href="/css/app.css">
+	<link rel="stylesheet" href="/css/libs.css">
 
 </head>
 <body>
 
-	<nav class="navbar navbar-fixed-top navbar-dark bg-inverse">
+	@include(flash)
+
+		<nav class="navbar navbar-fixed-top navbar-inverse">
       <div class="container">
         <a class="navbar-brand" href="/">F.S.W.Developer</a>
         <ul class="nav navbar-nav">
@@ -29,8 +33,12 @@
 
 	</div>
 
-	<!-- bootstrap core js -->
-	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.3/js/bootstrap.min.js" integrity="sha384-ux8v3A6CPtOTqOzMKiuo3d/DomGaaClxFYdCu2HPMBEkf6x2xiDyJ7gkXU0MWwaD" crossorigin="anonymous"></script>
+	<script src="https://code.jquery.com/jquery-3.1.0.min.js" integrity="sha256-cCueBR6CsyA4/9szpPfrX3s49M9vUU5BgtiJj06wt/s=" crossorigin="anonymous"></script>
+
+	<!-- Latest compiled and minified JavaScript -->
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+	<script src="/js/libs.js"></script>
 
 </body>
 </html>

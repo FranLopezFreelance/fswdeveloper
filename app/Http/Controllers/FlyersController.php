@@ -24,6 +24,7 @@ class FlyersController extends Controller {
 	 * @return \Illuminate\Http\Response
 	 */
 	public function create() {
+		flash('Hello World!');
 		return view('flyers.create');
 	}
 
@@ -36,7 +37,7 @@ class FlyersController extends Controller {
 	public function store(FlyerRequest $request) {
 		Flyer::create($rquest->all());
 
-		flash('Flyer Successfully created!')
+		flash('Flyer Successfully created!');
 
 		return redirect()->back();
 	}

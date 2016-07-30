@@ -1,5 +1,8 @@
 <?php
 
 function flash($message) {
-	return session()->flash('flash-message', $message);
+
+	$flash = app('App\Http\Flash');
+
+	return $flash->message($message);
 };
